@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--NavigationViewHelper와 id 연동-->
+    <item
+        android:id="@+id/announcement_menu"
+        android:title="공지"/>
+    <item
+        android:id="@+id/slee_menu"
+        android:title="외박 신청"/>
+    <item
+        android:id="@+id/restu_menu"
+        android:title="주변 식당"/>
+    <item
+        android:id="@+id/Bus_memu"
+        android:title="버스 노선로"/>
+    <item
+        android:id="@+id/Repair_menu"
+        android:title="하자보수 신청"/>
+    <item
+        android:id="@+id/rule_menu"
+        android:title="생활관 수칙"/>
+</menu>

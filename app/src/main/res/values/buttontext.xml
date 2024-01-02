@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gyjuda_bussttop">
+        경주대\n
+        정류소
+    </string>
+    <string name="dormitory_to_guju">
+        생활관\n
+        경주대행
+    </string>
+    <string name="dongguk_bus">
+        동국대\n
+        정류소
+    </string>
+    <string name="dormitory_to_dongguk">
+        생활관\n
+        동국대행
+    </string>
+    <string name="gyjubus">경주대행\n정류소</string>
+    <string name="dongguk">동국대행\n정류소</string>
+</resources>

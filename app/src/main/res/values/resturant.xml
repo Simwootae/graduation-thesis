@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dalguji">
+        달구지 수육국밥\n
+        경주 충효동 충효동 3길\n
+        0507-1415-3307\n
+        14:00 - 17:00 브레이크타임
+        정기휴무
+        점심시간(12~1시) 대에는 포장 제한
+    </string>
+    <string name="favor_res">
+        경주단골식당\n
+        경주 충효동 충효녹지길 30\n
+        054-772-9833\n
+        10:00 - 20:30, 14 : 16 - 00 브레이크타임
+        정기휴무 : 매달 화요일
+        라스트 오더 20 : 00, 매주 월요일 19 : 40
+    </string>
+    <string name="hwalan">
+        화란\n
+        경북 경주시 충효녹지길 128-7\n
+        054-772-0852\n
+        11: 00 - 21 : 00\n
+        정기휴무 : 매달 화요일
+    </string>
+    <string name="gyeongjumasjibmilmyeon">
+        경주맛집밀면\n
+        경북 경주시 충효녹지길 64\n
+        054-777-6663\n
+        2024년 1월 매장 이전 예정\n
+        11/05~12/1 휴무
+    </string>
+    <string name="zerofivefovepizza">
+        054피자\n
+        경북 경주시 태종로 440 1층 054피자\n
+        054-773-2008\n
+        배달 주문이 가능한 매장입니다
+    </string>
+    <string name="yangmilmyeon">
+        경주영양밀면\n
+        경북 경주시 태종로 442 1층\n
+        054-774-5139\n
+        매일 10 : 00 - 20 : 00
+        임시 공휴일 정상 영업
+    </string>
+    <string name="threethreeporkcutlet">
+        33돈까스\n
+        경북 경주시 충효녹지길 44-1\n
+        054-746-5003\n
+        매일 10 : 00 - 20 : 00
+        임시 공휴일 정상 영업
+    </string>
+    <string name="momstouch">
+        맘스터치\n
+        경북 경주시 충효녹지길 34\n
+        054-743-8884\n
+        매일 11 : 00 - 21 : 00\n
+        배달 가능 매장\n
+        https://momstouch.co.kr\n
+    </string>
+    <string name="hansotdosilag">
+        한솥도시락\n
+        hansotdosilag\n
+        054-774-6114\n
+        포장, 배달\n
+        http://www.hsd.co.kr\n
+    </string>
+    <string name="busanmilmyeonmongppong">
+        부산밀면 몽짬뽕\n
+        경북 경주시 충효녹지길 44-14\n
+        070-8761-1158\n
+        배달 가능 매장
+    </string>
+    <string name="peolppeolnagjibokk">
+        뻘뻘낙지볶음 전문점\n
+        경북 경주시 충효녹지길 40-11 (충효동)\n
+        054-772-8849\n
+        06 : 00 - 21 : 00 (매주 일요일 정기 휴무)\n
+        배달 가능 매장
+    </string>
+    <string name="pizzaschool">
+        피자스쿨\n
+        경북 경주시 충효녹지길 98 1층 피자스쿨\n
+        0507-1341-3210\n
+        11 : 00 - 22: 30 (라스트오더 22 : 00)\n
+        매주 월요일 정기휴뮤, 포장 배달 가능 매장
+    </string>
+    <string name="bbqchicken">
+        BBQ 치킨\n
+        경북 경주시 태종로 442 1층\n
+        054-774-5139\n
+        배달, 포장 가능 매장\n
+        http://www.bbq.co.kr/
+    </string>
+    <string name="paljori">
+        팔조리맷돌순두부\n
+        경북 경주시 충효녹지길 94-5\n
+        054-749-0562\n
+    </string>
+    <string name="milmyeonsidae">
+        밀면시대\n
+        경북 경주시 충효중앙길 93\n
+        054-777-5215\n
+        11: 00 - 20 : 00 \n
+        매주 일요일 정기 휴무
+    </string>
+    <string name="kyochon">
+        교촌치킨\n
+        경북 경주시 충효중앙길 27\n
+        054-749-9945\n
+        12 - 00 : 24 : 00\n
+        배달, 포장 가능 매장\n
+    </string>
+    <string name="dong">
+        교촌치킨\n
+        경북 경주시 충효중앙길 27\n
+        054-749-9945\n
+        12 - 00 : 24 : 00\n
+        배달, 포장 가능 매장\n
+    </string>
+    <string name="ttolaeolae">
+        또래오래\n
+        경북 경주시 충효중앙길 40\n
+        054-771-9995\n
+        배달, 포장 가능 매장\n
+    </string>
+    <string name="sambo">
+        삼보맛집\n
+        경북 경주시 충효녹지길 36-7\n
+        054-748-5721\n
+        09 : 30 - 20 : 00\n
+    </string>
+</resources>
