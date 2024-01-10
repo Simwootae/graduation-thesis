@@ -218,24 +218,7 @@
                         android:text="@string/peolppeolnagjibokk"/>
                 </LinearLayout>
 
-                <!-- 열 두 번째 줄 피자스쿨-->
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-                    <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:src="@drawable/pizzaschool"/>
-                    <TextView
-                        android:id="@+id/textview12"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/pizzaschool"/>
-                </LinearLayout>
-
-                <!-- 열 세 번째 줄 BBQ치킨-->
+                <!-- 열 두 번째 줄 BBQ치킨-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -252,7 +235,7 @@
                         android:text="@string/bbqchicken"/>
                 </LinearLayout>
 
-                <!-- 열 네 번째 줄 팔조리맷돌순두부-->
+                <!-- 열 세 번째 줄 팔조리맷돌순두부-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -269,7 +252,7 @@
                         android:text="@string/paljori"/>
                 </LinearLayout>
 
-                <!-- 열 다섯 번째 줄 밀면시대-->
+                <!-- 열 네 번째 줄 밀면시대-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -286,7 +269,7 @@
                         android:text="@string/milmyeonsidae"/>
                 </LinearLayout>
 
-                <!-- 열 여섯 번째 줄  교촌치킨-->
+                <!-- 열 다섯 번째 줄  교촌치킨-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -303,7 +286,7 @@
                         android:text="@string/kyochon"/>
                 </LinearLayout>
 
-                <!-- 열 일곱 번째 줄  동원국밥-->
+                <!-- 열 여섯 번째 줄  동원국밥-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -320,7 +303,7 @@
                         android:text="@string/dong"/>
                 </LinearLayout>
 
-                <!-- 열 여덟 번째 줄  또래오래-->
+                <!-- 열 일곱 번째 줄  또래오래-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -337,7 +320,7 @@
                         android:text="@string/ttolaeolae"/>
                 </LinearLayout>
 
-                <!-- 열 아홉 번째 줄  삼보맛집-->
+                <!-- 열 여덟 번째 줄  삼보맛집-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

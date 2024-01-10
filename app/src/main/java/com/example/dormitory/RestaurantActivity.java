@@ -46,7 +46,6 @@ public class RestaurantActivity extends AppCompatActivity
         TextView textView9 = findViewById(R.id.textview9);
         TextView textView10 = findViewById(R.id.textview10);
         TextView textView11 = findViewById(R.id.textview11);
-        TextView textView12 = findViewById(R.id.textview12);
         TextView textView13 = findViewById(R.id.textview13);
         TextView textView14 = findViewById(R.id.textview14);
         TextView textView15 = findViewById(R.id.textview15);
@@ -97,10 +96,6 @@ public class RestaurantActivity extends AppCompatActivity
         });
         textView11.setOnClickListener(v -> {
             String url = "https://naver.me/5jAw9u3g";
-            openWebPage(url);
-        });
-        textView12.setOnClickListener(v -> {
-            String url = "https://naver.me/IMV3hFk6";
             openWebPage(url);
         });
         textView13.setOnClickListener(v -> {
