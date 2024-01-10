@@ -16,7 +16,6 @@ import com.google.android.material.navigation.NavigationView;
 
 public class RestaurantActivity extends AppCompatActivity
 {
-    Button rulletButton;//버튼 함수
     Toolbar toolbar;// 툴바 변수
     NavigationView navigationView;//네비게이션 뷰 변수
     DrawerLayout drawerLayout;//드로어 레이아웃 변수
