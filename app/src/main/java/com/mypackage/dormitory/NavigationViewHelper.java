@@ -2,6 +2,8 @@ package com.mypackage.dormitory;
 
 import android.content.Context;
 import android.content.Intent;
+
+import com.example.dormitory.R;
 import com.google.android.material.navigation.NavigationView;
 
 //메뉴에서 자바 엑티비티를 호출하기 위한 액티비티, 메뉴전환 용
@@ -14,7 +16,7 @@ public class NavigationViewHelper
         {
             //menu_list와 id 연동, 호출
             //첫번째 버튼(공지)
-            if(item.getItemId()==R.id.announcement_menu)
+            if(item.getItemId()== R.id.announcement_menu)
             {
                 Intent intent = new Intent(context, AnnouncementActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);

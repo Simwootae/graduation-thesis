@@ -14,6 +14,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+
+import com.example.dormitory.R;
 import com.google.android.material.navigation.NavigationView;
 
 public class DormitoryRuleActivity extends AppCompatActivity //기숙사 규칙 액티비티
