@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!-- 패키지 경로 변경-->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!--인터넷 통신 허용-->
@@ -24,7 +26,7 @@
             android:name="com.naver.maps.map.CLIENT_ID"
             android:value="ducmnb7djb"/>
 
-        <activity android:name=".MainActivity"
+        <activity android:name="com.mypackage.dormitory.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -33,19 +35,19 @@
         </activity>
 
         <!--사용할 자바 파일 이름-->
-        <activity android:name="AnnouncementActivity"/>
-        <activity android:name="busstopActivity"/>
-        <activity android:name="DonggukBusstopActivity"/>
-        <activity android:name="DormitoryRuleActivity"/>
-        <activity android:name="DormitorytoGyeongjuBusstopAcivity"/>
-        <activity android:name="GyeongjuBusstopAcivity"/>
-        <activity android:name="DormitorytoDonggukBusAcivity"/>
-        <activity android:name="RepairActivity"/>
-        <activity android:name="RestaurantActivity"/>
-        <activity android:name="SleepoverActivity"/>
-        <activity android:name="WhereDonggukBusstopActivity"/>
-        <activity android:name="WhereDormitorytoDonggukBusAcivity"/>
-        <activity android:name="WhereDormitorytoGyeongjuBusstopAcivity"/>
-        <activity android:name="WhereGyeongjuBusstopAcivity"/>
+        <activity android:name="com.mypackage.dormitory.AnnouncementActivity"/>
+        <activity android:name="com.mypackage.dormitory.busstopActivity"/>
+        <activity android:name="com.mypackage.dormitory.DonggukBusstopActivity"/>
+        <activity android:name="com.mypackage.dormitory.DormitoryRuleActivity"/>
+        <activity android:name="com.mypackage.dormitory.DormitorytoDonggukBusAcivity"/>
+        <activity android:name="com.mypackage.dormitory.DormitorytoGyeongjuBusstopAcivity"/>
+        <activity android:name="com.mypackage.dormitory.GyeongjuBusstopAcivity"/>
+        <activity android:name="com.mypackage.dormitory.RepairActivity"/>
+        <activity android:name="com.mypackage.dormitory.RestaurantActivity"/>
+        <activity android:name="com.mypackage.dormitory.SleepoverActivity"/>
+        <activity android:name="com.mypackage.dormitory.WhereDonggukBusstopActivity"/>
+        <activity android:name="com.mypackage.dormitory.WhereDormitorytoDonggukBusAcivity"/>
+        <activity android:name="com.mypackage.dormitory.WhereDormitorytoGyeongjuBusstopAcivity"/>
+        <activity android:name="com.mypackage.dormitory.WhereGyeongjuBusstopAcivity"/>
     </application>
 </manifest>
