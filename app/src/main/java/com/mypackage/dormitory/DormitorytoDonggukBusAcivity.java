@@ -1,4 +1,4 @@
-package com.example.dormitory;
+package com.mypackage.dormitory;
 
 import android.content.Context;
 import android.content.Intent;
@@ -21,21 +21,21 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.URL;
 
-public class GyeongjuBusstopAcivity extends AppCompatActivity //경주대 -> 연합기숙사
+public class DormitorytoDonggukBusAcivity extends AppCompatActivity //연합 기숙사->동국대 정류장 액티비티
 {
     Button busstopbutton;
     boolean busFound = false; //도착 예정 버스가 없습니다 반복문용
     Toolbar toolbar;// 툴바 변수
     NavigationView navigationView;//네비게이션 뷰 변수
     DrawerLayout drawerLayout;//드로어 레이아웃 변수
-    private final Context mContext = GyeongjuBusstopAcivity.this;
+    private final Context mContext = DormitorytoDonggukBusAcivity.this;
     private NavigationView nav;//자바를 네비게이션을 통해 호출하기 위해 호출하기 위한 변수
     TextView text;
     //발급받은 인증키(인코딩)
-    String data;
     String key = "hJ4D%2F0pmhHozXC0XRoM5iOeccDvtvD0XdcRCaolcp5OGcxdpqyxqJj3wJuKkEQnBke%2F0NqLfl9W8CDCVvb7vOA%3D%3D";
+    String data;
     String city = "37020";
-    String busstopcode = "KUB352000340";
+    String busstopcode = "KUB352001050";
     ////////////////////////////////////////////////////////////////////////////////////////////////
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -45,6 +45,7 @@ public class GyeongjuBusstopAcivity extends AppCompatActivity //경주대 -> 연
 
         this.Busprint();//파싱 출력 함수
         text = findViewById(R.id.text); //텍스트에 데이터 출력
+
         Nav_class();
         NavigationViewHelper.enableNavigation(mContext,nav);
         this.drawlayouyfunction();//툴바
@@ -58,7 +59,7 @@ public class GyeongjuBusstopAcivity extends AppCompatActivity //경주대 -> 연
         //정류장 클릭시 화면 전환
         busstopbutton.setOnClickListener(v ->
         {
-            Intent intent = new Intent(getApplicationContext(), WhereGyeongjuBusstopAcivity.class);
+            Intent intent = new Intent(getApplicationContext(), WhereDormitorytoDonggukBusAcivity.class);
             startActivity(intent);
         });
     }
@@ -112,17 +113,14 @@ public class GyeongjuBusstopAcivity extends AppCompatActivity //경주대 -> 연
             int busArrivalTime = -1; // 초기값으로 설정
             String busNumber = null; // 초기값으로 설정
 
-            while (eventType != XmlPullParser.END_DOCUMENT)
-            {
-                switch (eventType)
-                {
+            while (eventType != XmlPullParser.END_DOCUMENT) {
+                switch (eventType) {
                     case XmlPullParser.START_DOCUMENT:
                         buffer.append("파싱 시작\n\n");
                         break;
                     case XmlPullParser.START_TAG:
                         tag = xpp.getName(); // 태그 이름 얻어오기
-                        if (tag.equals("item"))
-                        {
+                        if (tag.equals("item")) {
                             // "item" 태그가 시작되면 새로운 결과가 시작된 것으로 가정
                             busArrivalTime = -1; // 초기화
                             busNumber = null; // 초기화
@@ -147,7 +145,7 @@ public class GyeongjuBusstopAcivity extends AppCompatActivity //경주대 -> 연
                             // "item" 태그가 끝나면 현재 결과 출력
                             if (busArrivalTime >= 0 && busNumber != null)
                             {
-                                if (busNumber.equals("50") || busNumber.equals("51") || busNumber.equals("332") || busNumber.equals("350") || busNumber.equals("710"))
+                                if (busNumber.equals("50") || busNumber.equals("41") || busNumber.equals("51"))
                                 {
                                     buffer.append("버스 번호 : " + busNumber + "\n");
                                     busFound = true; // 적어도 하나의 버스 번호가 맞는 경우 true로 설정

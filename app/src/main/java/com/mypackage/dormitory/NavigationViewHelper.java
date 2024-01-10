@@ -1,4 +1,4 @@
-package com.example.dormitory;
+package com.mypackage.dormitory;
 
 import android.content.Context;
 import android.content.Intent;

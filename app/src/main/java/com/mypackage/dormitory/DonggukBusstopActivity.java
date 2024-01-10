@@ -1,4 +1,4 @@
-package com.example.dormitory;
+package com.mypackage.dormitory;
 
 import android.content.Context;
 import android.content.Intent;
@@ -16,7 +16,6 @@ import org.xmlpull.v1.XmlPullParserFactory;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.URL;
-import java.text.BreakIterator;
 
 public class DonggukBusstopActivity extends AppCompatActivity //동국대 -> 연합기숙사
 {

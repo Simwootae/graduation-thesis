@@ -1,4 +1,4 @@
-package com.example.dormitory;
+package com.mypackage.dormitory;
 
 import android.Manifest;
 import android.content.Context;
@@ -10,10 +10,12 @@ import android.location.LocationManager;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.FragmentActivity;
+
 import com.naver.maps.geometry.LatLng;
 import com.naver.maps.map.CameraUpdate;
 import com.naver.maps.map.LocationTrackingMode;
@@ -25,8 +27,8 @@ import com.naver.maps.map.overlay.LocationOverlay;
 import com.naver.maps.map.overlay.Marker;
 import com.naver.maps.map.util.FusedLocationSource;
 
-//동국대 정류장
-public class WhereDonggukBusstopActivity extends FragmentActivity implements OnMapReadyCallback
+//연합->경주대 정류장
+public class WhereDormitorytoGyeongjuBusstopAcivity extends FragmentActivity implements OnMapReadyCallback
 {
     private static final int LOCATION_PERMISSION_REQUEST_CODE = 1000;
     Marker mk = new Marker();
@@ -47,7 +49,6 @@ public class WhereDonggukBusstopActivity extends FragmentActivity implements OnM
         locationSource = new FusedLocationSource(this, LOCATION_PERMISSION_REQUEST_CODE);
         locationListener = new LocationListener()
         {
-
             @Override
             public void onLocationChanged(@NonNull Location location) {
                 updateMap(location);
@@ -68,56 +69,9 @@ public class WhereDonggukBusstopActivity extends FragmentActivity implements OnM
 
         this.locationService();
     }
-    ///////////////////////////////////////////////////////////////////////////////////////////////
-    // 버튼 함수
-    public void buttonfunction()
-    {
-        Button Main;
-        Main = findViewById(R.id.homebutton);
-
-        //홈 버튼 클릭시 화면 전환
-        Main.setOnClickListener(v ->
-        {
-            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-            startActivity(intent);
-        });
-
-        Button button = findViewById(R.id.myGPS);
-        button.setOnClickListener(v ->
-        {
-            if (naverMap != null)
-            {
-                // mk 마커를 항상 표시하도록 설정
-                mk.setVisible(true);
-
-                // 현재 위치로 지도의 중앙을 이동시킴
-                if (pre_LOC != null)
-                {
-                    CameraUpdate cameraUpdate = CameraUpdate.scrollTo(pre_LOC);
-                    naverMap.moveCamera(cameraUpdate);
-
-                    // mk 마커 위치 업데이트
-                    mk.setPosition(pre_LOC);
-                    mk.setMap(naverMap);
-
-                    // InfoWindow를 이용하여 마커 위에 텍스트 표시
-                    InfoWindow infoWindow = new InfoWindow();
-                    infoWindow.setAdapter(new InfoWindow.DefaultTextAdapter(this) {
-                        @NonNull
-                        @Override
-                        public CharSequence getText(@NonNull InfoWindow infoWindow) {
-                            return "현재 위치";
-                        }
-                    });
-                    infoWindow.open(mk);
-                }
-            }
-        });
-    }
     ////////////////////////////////////////////////////////////////////////////////////////////////
     public void locationService()
     {
-
         if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION)
                 != PackageManager.PERMISSION_GRANTED)
         {
@@ -151,6 +105,50 @@ public class WhereDonggukBusstopActivity extends FragmentActivity implements OnM
         }
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
     }
+    ///////////////////////////////////////////////////////////////////////////////////////////////
+    // 버튼 함수
+    public void buttonfunction()
+    {
+        Button Main;
+        Main = findViewById(R.id.homebutton);
+
+        //홈 버튼 클릭시 화면 전환
+        Main.setOnClickListener(v ->
+        {
+            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+            startActivity(intent);
+        });
+
+        Button button = findViewById(R.id.myGPS);
+        button.setOnClickListener(v ->
+        {
+            if (naverMap != null) {
+                // mk 마커를 항상 표시하도록 설정
+                mk.setVisible(true);
+
+                // 현재 위치로 지도의 중앙을 이동시킴
+                if (pre_LOC != null) {
+                    CameraUpdate cameraUpdate = CameraUpdate.scrollTo(pre_LOC);
+                    naverMap.moveCamera(cameraUpdate);
+
+                    // mk 마커 위치 업데이트
+                    mk.setPosition(pre_LOC);
+                    mk.setMap(naverMap);
+
+                    // InfoWindow를 이용하여 마커 위에 텍스트 표시
+                    InfoWindow infoWindow = new InfoWindow();
+                    infoWindow.setAdapter(new InfoWindow.DefaultTextAdapter(this) {
+                        @NonNull
+                        @Override
+                        public CharSequence getText(@NonNull InfoWindow infoWindow) {
+                            return "현재 위치";
+                        }
+                    });
+                    infoWindow.open(mk);
+                }
+            }
+        });
+    }
     ////////////////////////////////////////////////////////////////////////////////////////////////
     //지도를 출력할 프래그먼트 영역 인식 함수
     public void fragmentFunction() {
@@ -180,7 +178,7 @@ public class WhereDonggukBusstopActivity extends FragmentActivity implements OnM
         naverMap.setSymbolScale(1.5f);
 
         //정류장 위도 경도 변수
-        LatLng Busstop = new LatLng(35.860624695323686, 129.1969006186155);
+        LatLng Busstop = new LatLng(35.84316431570256, 129.18147071390027);
 
         //지도 중심
         CameraUpdate cameraUpdate1 = CameraUpdate.scrollTo(Busstop);

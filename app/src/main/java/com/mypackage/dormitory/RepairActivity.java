@@ -1,5 +1,4 @@
-package com.example.dormitory;
-
+package com.mypackage.dormitory;
 
 import android.content.Context;
 import android.content.Intent;
@@ -15,11 +14,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
-
 import com.google.android.material.navigation.NavigationView;
 
-//공지사항 자바 액티비티
-public class AnnouncementActivity extends AppCompatActivity //공지 액티비티
+public class RepairActivity extends AppCompatActivity //하자 보수 신청 액티비티
 {
     Button sleepoverbutton_main; //외박 신청 버튼 생성
     Button homebutton_main;//홈 버튼 생성
@@ -27,13 +24,14 @@ public class AnnouncementActivity extends AppCompatActivity //공지 액티비�
     Toolbar toolbar;// 툴바 변수
     NavigationView navigationView;//네비게이션 뷰 변수
     DrawerLayout drawerLayout;//드로어 레이아웃 변수
-    private final Context mContext = AnnouncementActivity.this;
+    private final Context mContext = RepairActivity.this;
     private NavigationView nav;//자바를 네비게이션을 통해 호출하기 위해 호출하기 위한 변수
     ////////////////////////////////////////////////////////////////////////////////////////
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment_dromitory);//액티비티 메인 호출
+
         Nav_class();
         NavigationViewHelper.enableNavigation(mContext,nav);
 
@@ -56,7 +54,7 @@ public class AnnouncementActivity extends AppCompatActivity //공지 액티비�
         webSettings.setJavaScriptEnabled(true); //자바스크립트 허용
 
         webView.setWebViewClient(new WebViewClient());
-        webView.loadUrl("https://www.gyh-dormitory.com/"); //경주 연합 기숙사 공지
+        webView.loadUrl("https://www.gyh-dormitory.com/blank-5"); //하자 보수
 
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON); //화면이 계속 켜짐
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_FULL_USER);
@@ -78,6 +76,7 @@ public class AnnouncementActivity extends AppCompatActivity //공지 액티비�
             Intent intent = new Intent(getApplicationContext(), MainActivity.class);
             startActivity(intent);
         });
+
     }
     ////////////////////////////////////////////////////////////////////////////////////////////////
     public void drawlayouyfunction()

@@ -1,4 +1,4 @@
-package com.example.dormitory;
+package com.mypackage.dormitory;
 
 import android.content.Context;
 import android.content.Intent;
@@ -21,21 +21,21 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.URL;
 
-public class DormitorytoDonggukBusAcivity extends AppCompatActivity //연합 기숙사->동국대 정류장 액티비티
+public class DormitorytoGyeongjuBusstopAcivity extends AppCompatActivity //기숙사 -> 경주대
 {
     Button busstopbutton;
     boolean busFound = false; //도착 예정 버스가 없습니다 반복문용
     Toolbar toolbar;// 툴바 변수
     NavigationView navigationView;//네비게이션 뷰 변수
     DrawerLayout drawerLayout;//드로어 레이아웃 변수
-    private final Context mContext = DormitorytoDonggukBusAcivity.this;
+    private final Context mContext = DormitorytoGyeongjuBusstopAcivity.this;
     private NavigationView nav;//자바를 네비게이션을 통해 호출하기 위해 호출하기 위한 변수
     TextView text;
     //발급받은 인증키(인코딩)
     String key = "hJ4D%2F0pmhHozXC0XRoM5iOeccDvtvD0XdcRCaolcp5OGcxdpqyxqJj3wJuKkEQnBke%2F0NqLfl9W8CDCVvb7vOA%3D%3D";
     String data;
     String city = "37020";
-    String busstopcode = "KUB352001050";
+    String busstopcode = "KUB352001044";
     ////////////////////////////////////////////////////////////////////////////////////////////////
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -59,11 +59,11 @@ public class DormitorytoDonggukBusAcivity extends AppCompatActivity //연합 기
         //정류장 클릭시 화면 전환
         busstopbutton.setOnClickListener(v ->
         {
-            Intent intent = new Intent(getApplicationContext(), WhereDormitorytoDonggukBusAcivity.class);
+            Intent intent = new Intent(getApplicationContext(), WhereDormitorytoGyeongjuBusstopAcivity.class);
             startActivity(intent);
         });
     }
-    ////////////////////////////////////////////////////////////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////////////////////////////////////
     public void Busprint()
     {
         new Thread(() ->
@@ -145,7 +145,7 @@ public class DormitorytoDonggukBusAcivity extends AppCompatActivity //연합 기
                             // "item" 태그가 끝나면 현재 결과 출력
                             if (busArrivalTime >= 0 && busNumber != null)
                             {
-                                if (busNumber.equals("50") || busNumber.equals("41") || busNumber.equals("51"))
+                                if (busNumber.equals("50") || busNumber.equals("334") || busNumber.equals("710") || busNumber.equals("711"))
                                 {
                                     buffer.append("버스 번호 : " + busNumber + "\n");
                                     busFound = true; // 적어도 하나의 버스 번호가 맞는 경우 true로 설정
